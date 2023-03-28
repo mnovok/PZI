@@ -1,0 +1,82 @@
+body {
+    font-family: 'Georgia';
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+h1 {
+    color: rgb(0, 57, 142);
+}
+
+h1 em {
+    color: rgb(1, 41, 99);
+}
+
+p {
+    background-color: lightgrey;
+    padding: 1em;
+    text-align: justify;
+}
+    
+.paragraph-special {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(63, 63, 63); 
+}
+
+p em {
+    color: red;
+}
+
+p strong {
+    background-color: red;
+    color: white;
+    border-width: 3px;
+}
+
+body li > ul > li
+ {
+    font-weight: bold;
+}
+
+img {
+    border-radius: 5px;
+    width: 49%;
+    height: 49%;
+}
+
+img:hover {
+    transform: scale(120%);
+}
+
+#heading-pzi {
+    color:red;
+}
+
+table{
+    margin: 2rem auto;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 2px;
+}
+
+th {
+    background-color: lightgrey;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightcoral;
+}
+
+tbody tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+tfoot {
+    text-align: center;
+}
+
