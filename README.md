@@ -1,1 +1,1 @@
-Web programming basics
+Lab works in Web programming (basics)
