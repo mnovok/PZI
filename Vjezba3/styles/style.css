@@ -1,0 +1,131 @@
+body {
+    font-family: Georgia;
+    margin: 0;
+    
+    --primary-color: #2e7cc5;
+    --light-primary-color: #96aec4;
+    
+    --secondary-color: #4e4e4e;
+    --light-secondary-color: #d3d3d3;
+    }
+    
+ header {
+    background-color: var(--primary-color);
+    color: white;
+    
+    display: flex; /*  */
+    justify-content: space-between;  /* seach i nazivi razmaknuti*/
+    align-items: center; /* tekst je centriran */
+    
+    padding: 0.5em;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    }
+
+#search-container {  
+    background-color: white;
+    color: var(--secondary-color);
+    border-radius: 10px; /* obrub */
+    }
+        
+.search-icon {
+    padding: 0.5em;
+    border-right: 1px solid var(--light-secondary-color); /* crta */
+    }
+        
+#search-box {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    }
+        
+main {
+    max-width: 800px;
+    margin: 4em auto;
+    }
+        
+nav { /* vjezbe */
+    display: flex;
+    justify-content: space-between;
+    }
+        
+.links-container a { /* link unutar vj123 */
+    background-color: var(--light-primary-color);
+    color: white; /* boja teksta */
+    padding: 0.5em;       
+    text-decoration: none;
+    margin-right: 1em; /* prostor izmedju */
+    }
+
+.links-container a.selected{ /* donji obrub selektiranog */
+    border-bottom: 3px solid transparent;
+}
+        
+.links-container a:last-child{
+    margin-right: 0;
+    }
+        
+img {
+    max-width: 100%;
+    }
+
+#thumbnails-container { 
+    display: flex;
+    justify-content: space-between;
+    }
+
+.thumbnail:not(:last-of-type){
+    margin-right: 5px;
+}
+
+.thumbnail.selected{ /* obrub donje selektirane slike */
+    border-bottom: 3px solid var(--primary-color);
+}
+        
+nav .links-container .selected { 
+    border-bottom: 3px solid var(--primary-color);
+    }
+        
+nav .links-container .selected:not(:last-child) {
+    border-bottom: 3px solid transparent;
+    }
+            
+.thumbnail.selected .thumbnail {
+    border-bottom: 3px solid transparent;
+    }
+        
+#thumbnails-container .thumbnail.selected {
+    border-bottom: 3px solid var(--primary-color);
+    }
+        
+#cards-container {  /* 3 stupca */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fr - fraction odnosi se na omjer 1:1:1*/
+    grid-row-gap: 0.5em;
+    grid-column-gap: 0.5em;
+    }
+        
+#cards-container .card { 
+    position: relative;
+    background-color: var(--light-secondary-color);
+    padding: 5px;
+    }
+        
+#cards-container .card .delete-button {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    color: var(--secondary-color);
+    }
+        
+footer { 
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    place-content: center;
+    margin-top: 2rem;
+    padding: 8px;
+    }

@@ -1,0 +1,30 @@
+Marija Novokmet
+
+Name truthy and falsy values in JavaScript.
+-falsy bi bile false, undefined, null, prazan string, NaN i 0
+-truthy su sve ostale, npr. true, 'hi'
+
+What is the difference between == and === operators?
+- operator == je operator jednakosti. provjerava jesu li dva operanda jednaki promjenom izraza iz jedne vrste u drugu
+- operator === je operator striktne jednakosti, drukciji tipovi znači da su nejednaki
+
+Why does '' == false equal to true but '' === false is equal to false?
+- 
+
+
+What is JavaScript scope, what are the different types of JavaScript scope?
+- Opseg je kontekst unutar kojeg su varijable i funkcije dostupne. Postoji nekoliko različitih vrsta opsega u JavaScriptu: globalni, lokalni, blok i leksički. 
+
+Describe each scope type and provide an example.
+- Blok koda odnosi se na sve kodove između kovrčavih vitičastih zagrada {}
+- Leksički opseg je područje definicije izraza. Drugim riječima, leksički opseg stavke je mjesto na kojem je stavka stvorena.
+
+
+What is the difference between let and const keywords?
+
+Give an example of use of map, filter, find JavaScript array methods used on:
+const fruits = [ 'apple', 'banana', 'orange', 'kiwi', 'strawberry' ];
+
+What is the difference between split, slice and splice JavaScript array methods.
+
+What is hoisting?
