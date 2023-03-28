@@ -1,2 +1,1 @@
-# PZI
 Web programming basics
