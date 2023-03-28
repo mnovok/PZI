@@ -1,2 +1,2 @@
 # PZI
- Programiranje za internet (120)
+Web programming basics
